@@ -1,0 +1,271 @@
+<html>
+	<head>
+		<meta http-equiv="refresh" content="300" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style>
+			#amsterdam-container, #rotterdam-container, #utrecht-container {
+				display: inline-block;
+			}
+			.widget-title{
+				display: none;
+			}
+			.marquee-container{
+				overflow: hidden;
+				white-space: nowrap;
+				position:absolute;
+				top: 95%;
+				bottom: 0%;
+				left: 0%;
+				height: 5%;
+				width: 100%;
+				font-family: 'Roboto';
+				color: white;
+				background-color: #545a67;
+			}
+
+			.marq {
+				display: inline-block;
+				animation: marquee 120s linear infinite;
+				width: 100%;
+				height: 100%;
+              
+               
+			}
+			
+			.score {
+				font-family: 'Roboto';
+				display: inline-block;
+				margin-left: 50px;
+				vertical-align: middle;
+			}
+			.score-team {
+				font-family: 'Roboto';
+				color: white;
+				background-color: #545a67;
+				padding-right: 10px;
+				font-weight: bold;
+                
+			}
+			.score-score {
+				font-family: 'Roboto';
+				color: white;
+				background-color: black;
+				padding-left: 20px;
+				font-weight: bold;
+			}
+			.score-score.winner {
+				font-family: 'Roboto';
+				color: #fff999;
+				background-color: black;
+				padding-left: 20px;
+				font-weight: bold;
+			}
+
+			.standing-container {
+				position: absolute;
+				top:46%;
+				left:88%;
+				width:11%;
+				height: 48%;
+			}
+			.standing {
+				font-family: 'Roboto';
+				font-size: 14px;
+				vertical-align: middle;
+			}
+
+			@keyframes marquee {
+				from {
+					transform: translateX(100%);
+				}
+				to {
+					transform: translateX(-600%);
+				}
+			}
+		</style>
+
+		<script type="text/javascript">
+			setInterval(displayClock, 1000)
+			function displayClock(){
+				var time = new Date();
+				var months = new Array();
+				months[0] = "January";
+				months[1] = "February";
+				months[2] = "March";
+				months[3] = "April";
+				months[4] = "May";
+				months[5] = "June";
+				months[6] = "July";
+				months[7] = "August";
+				months[8] = "September";
+				months[9] = "October";
+				months[10] = "November";
+				months[11] = "December";
+				var month = months[time.getMonth()];
+				var day = time.getDate();
+				var hrs = time.getHours();
+				var min = time.getMinutes();
+				var sec = time.getSeconds();
+				var en = 'AM';
+
+				if (sec == 13) {
+					document.getElementById("maxgrip-logo").src="images/maxgirp.png";
+				} else {
+					document.getElementById("maxgrip-logo").src="images/maxgrip.png";
+				}
+
+				if(hrs == 17 && min == 0) {
+					document.getElementById("clock").innerHTML = "Beer O'Clock";
+				}
+				else
+				{
+					if(hrs > 12){
+						en = 'PM';
+						hrs = hrs - 12;
+					}
+
+					if(min < 10){
+						min = '0' + min;
+					}
+
+					if(sec < 10){
+						sec = '0' + sec;
+					}
+
+					document.getElementById("clock").innerHTML = month + ' ' + day + ',   ' + hrs + ':' + min + ':' + sec + ' ' + en;
+				}
+			}
+		</script>
+
+		<script type="text/javascript" src="scores.json"></script>
+		<script type="text/javascript" src="standings.json"></script>
+		<script type="text/javascript" src="week.json"></script>
+        
+		<script type="text/javascript">
+			function scoresAndStandings() {
+				var result = "<div class=\"score\"><h3 style=\"padding-top: 10px; margin: 0px;\">Week "
+					+ week.number
+					+ ":<h3></div>";
+				for (var i = 0; i < scores.length;i++) {
+					result += "<div class=\"score\"><table><tr><td class=\"score-team\">"
+						+ scores[i].away.team
+						+ "</td><td class=\"score-score";
+						if (week.final && scores[i].away.score >= scores[i].home.score) {
+							result += " winner";
+						}
+					result += "\">"
+						+ scores[i].away.score
+						+ "</td></tr><tr><td class=\"score-team\">"
+						+ scores[i].home.team
+						+ "</td><td class=\"score-score";
+						if (week.final && scores[i].away.score <= scores[i].home.score) {
+							result += " winner";
+						}
+					result += "\">"
+						+ scores[i].home.score
+						+ "</td></tr></table></div>";
+				}
+				document.getElementById("score-marquee").innerHTML = result;
+
+				standings.sort(function(a, b){
+					if (b.wins == a.wins) {
+						return a.losses-b.losses
+					} else {
+						return b.wins-a.wins
+					}
+				});
+
+				result = "";
+				for (var i = 0; i < standings.length;i++) {
+					result += "<tr><td>" + (i+1) + ".</td><td>" 
+						+ standings[i].team
+						+ "</td><td>" 
+						+ standings[i].wins
+						+ "-"
+						+ standings[i].losses
+						+ "</td></tr>";
+				}
+				document.getElementById("standing-table").innerHTML = result;
+			}
+		</script>
+
+        <script type ="text/javascript" src ="tweet_data.json"></script>
+
+        <script type="text/javascript">
+			function twitterTicker() {
+			    var result = "<div class=\"score\"><h3 style=\"padding-top: 15px; margin: 0px; color: #1DA1F2;\">Twitter:<h3></div>";
+                
+			    for (var i = 0; i < tweet_data.length; i++) {
+			        result += "<div class=\"score\">"
+                        + "@" + tweet_data[i].username + " on Twitter: " + tweet_data[i].tweet
+						+ "</td><td class=\"score-score";
+			       
+			        result += "\">"
+						+"</table></div>";
+			    }
+
+				document.getElementById("score-marquee").innerHTML = result;
+
+
+				result = "";
+				
+			}
+        </script>
+	</head>
+    
+	<body onload="twitterTicker()">
+        <!-- Header w/ pictures and clock -->
+		<div class="header" style="border-bottom: 1px solid #f2f2f2; height:8%">
+			<img src="images/ortec.png" id="ortec-logo" style="position:relative;">
+			<img src="images/maxgrip.png" id="maxgrip-logo" style="float:right">
+			<h1 id="clock" onload=""="displayDate()" style="position: absolute; top:0; left:41%; top: 1%; font-family:'Roboto'; color:#545a67;"></h1>
+		</div>
+		<br>
+        <!-- Widget Titles -->
+        <div class="widget-title-container">
+            <h3 style="font-family:'Roboto'; position:absolute; top:8%; width:24%; left:68%; color:#545a67;">Weather</h3>
+            <h3 style="font-family:'Roboto'; position:absolute; top:41%; width:24%; left:68%; color:#545a67;">Traffic</h3>
+            <!--
+        <h3 style="font-family:'Roboto'; position:absolute; top:41%; left:89%; color:#545a67;">Ortegrippies:</h3>
+        -->
+        </div>
+
+        <!-- City Names -->
+		<div class=calendar-title-container>
+			<div style="position:absolute; top:10%; left: 10%; height:15px; width:15px; background:#28754e;"></div><h3 style="font-family:'Roboto'; position:absolute; top:8%; width:32%; left:12%; color:#545a67;">Amsterdam</h3>
+			<div style="position:absolute; top:10%; left: 21%; height:15px; width:15px; background:#5229A3;"></div><h3 style="font-family:'Roboto'; position:absolute; top:8%; width:32%; left:23%; color:#545a67;">Rotterdam</h3>
+			<div style="position:absolute; top:10%; left: 32%; height:15px; width:15px; background:#691426;"></div><h3 style="font-family:'Roboto'; position:absolute; top:8%;width:33%; left:34%; color:#545a67;">Utrecht</h3>
+		</div>
+
+        <!-- Calendar -->
+		<div id="calendar-wrapper" style="width:55%; height:auto; position:absolute; left: 4%; top:13%">
+                <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=h3s8tring91r7tu165muo1l3qs%40group.calendar.google.com&amp;color=%2328754E&amp;src=jjldp4p0g73lth1b4q5rbk2674%40group.calendar.google.com&amp;color=%235229A3&amp;src=923mmju0jg8612938sbo3pvmic%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>    
+		</div>
+        
+
+        <!-- Weather (Dark Sky API)-->
+		<div id="weather-container" style="width:33%; height:26%; overflow: hidden;  position:absolute; left: 60%; top:12%;">
+			<script type='text/javascript' src='https://darksky.net/widget/default/29.7604267,-95.3698028/us12/en.js?width=100%&height=304&title=Houston, TX&textColor=333333&bgColor=FFFFFF&transparency=false&skyColor=333333&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'></script>
+		</div>
+
+        <!-- Traffic (waze)-->
+		<div id="traffic-container" style="position: absolute; top:46%; left:60%; width:40%; height: 48%">
+            <iframe width="600" height="450" allowfullscreen src="https://embed.waze.com/iframe?zoom=12&lat=29.745898&lon=-95.453682&ct=livemap"></iframe>
+        </div>
+        
+        <!-- Fantasy Football Standings
+		<div class="standing-container">
+				<table class="standing" id="standing-table">
+					<tr>
+						<td>1.</td><td>Standings</td><td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+        -->
+
+		<div class="marquee-container">
+			<div class="marq" id="score-marquee"></div>
+		</div>
+	</body>
+</html>
