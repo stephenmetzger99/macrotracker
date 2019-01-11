@@ -1,0 +1,30 @@
+tweet_data =[
+    {
+        "username": "elonmusk\n",
+        "tweet": "Falcon 9 and 10 Iridium NEXT satellites vertical on SpaceX\u2019s California launch pad at Vandenberg Air Force Base. Tomorrow\u2019s instantaneous launch window is at 7:31 a.m. PST, 15:31 UTC \u2192 http://spacex.com/webcast "
+    },
+    {
+        "username": "espn\n",
+        "tweet": "A BIG man game. \n\nLaMarcus Aldridge's 56 points were the most by any player without attempting a three since @SHAQ's 61-point game on his 28th birthday in 2000."
+    },
+    {
+        "username": "NPR\n",
+        "tweet": "A U.S. Border Patrol agent has pleaded not guilty to charges of capital murder. Juan David Ortiz is accused of fatally shooting four women who were sex workers because he thought it was his duty to clean up the streets."
+    },
+    {
+        "username": "TechCrunch\n",
+        "tweet": "Here's your daily roundup on the top stories from the tech world"
+    },
+    {
+        "username": "BBCworld\n",
+        "tweet": "\"My son wants to sell art to pay our bills.\"\n\nHow are Americans coping with the government shutdown?\n\n[Tap to expand] https://bbc.in/2Fqz1Kh "
+    },
+    {
+        "username": "nasa\n",
+        "tweet": "The @SpaceX #Dragon cargo craft will stay a few more days at the space station as the crew gets back to science and maintenance duties. https://go.nasa.gov/2FlqJDo "
+    },
+    {
+        "username": "DalaiLama\n",
+        "tweet": "Modern education is premised strongly on materialistic values. It is vital that when educating our children\u2019s brains that we do not neglect to educate their hearts, a key element of which has to be the nurturing of our compassionate nature."
+    }
+]
