@@ -137,57 +137,7 @@
 			}
 		</script>
 
-		<script type="text/javascript" src="scores.json"></script>
-		<script type="text/javascript" src="standings.json"></script>
-		<script type="text/javascript" src="week.json"></script>
-        
-		<script type="text/javascript">
-			function scoresAndStandings() {
-				var result = "<div class=\"score\"><h3 style=\"padding-top: 10px; margin: 0px;\">Week "
-					+ week.number
-					+ ":<h3></div>";
-				for (var i = 0; i < scores.length;i++) {
-					result += "<div class=\"score\"><table><tr><td class=\"score-team\">"
-						+ scores[i].away.team
-						+ "</td><td class=\"score-score";
-						if (week.final && scores[i].away.score >= scores[i].home.score) {
-							result += " winner";
-						}
-					result += "\">"
-						+ scores[i].away.score
-						+ "</td></tr><tr><td class=\"score-team\">"
-						+ scores[i].home.team
-						+ "</td><td class=\"score-score";
-						if (week.final && scores[i].away.score <= scores[i].home.score) {
-							result += " winner";
-						}
-					result += "\">"
-						+ scores[i].home.score
-						+ "</td></tr></table></div>";
-				}
-				document.getElementById("score-marquee").innerHTML = result;
-
-				standings.sort(function(a, b){
-					if (b.wins == a.wins) {
-						return a.losses-b.losses
-					} else {
-						return b.wins-a.wins
-					}
-				});
-
-				result = "";
-				for (var i = 0; i < standings.length;i++) {
-					result += "<tr><td>" + (i+1) + ".</td><td>" 
-						+ standings[i].team
-						+ "</td><td>" 
-						+ standings[i].wins
-						+ "-"
-						+ standings[i].losses
-						+ "</td></tr>";
-				}
-				document.getElementById("standing-table").innerHTML = result;
-			}
-		</script>
+        <script type ="text/javascript" src ="log.json"></script>
 
         <script type ="text/javascript" src ="tweet_data.json"></script>
 
@@ -203,9 +153,11 @@
 			        result += "\">"
 						+"</table></div>";
 			    }
-
+                 
+      
 				document.getElementById("score-marquee").innerHTML = result;
-
+                
+             
 
 				result = "";
 				

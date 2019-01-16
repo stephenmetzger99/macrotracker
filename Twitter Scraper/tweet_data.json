@@ -1,30 +1,34 @@
 tweet_data =[
     {
         "username": "elonmusk\n",
-        "tweet": "Falcon 9 and 10 Iridium NEXT satellites vertical on SpaceX\u2019s California launch pad at Vandenberg Air Force Base. Tomorrow\u2019s instantaneous launch window is at 7:31 a.m. PST, 15:31 UTC \u2192 http://spacex.com/webcast "
+        "tweet": "Btw, you can buy a Tesla online in less than 2 mins & give it back for a full refund for any reason"
     },
     {
-        "username": "espn\n",
-        "tweet": "A BIG man game. \n\nLaMarcus Aldridge's 56 points were the most by any player without attempting a three since @SHAQ's 61-point game on his 28th birthday in 2000."
+        "username": "elonmusk\n",
+        "tweet": "Glad you like it"
     },
     {
-        "username": "NPR\n",
-        "tweet": "A U.S. Border Patrol agent has pleaded not guilty to charges of capital murder. Juan David Ortiz is accused of fatally shooting four women who were sex workers because he thought it was his duty to clean up the streets."
+        "username": "npr\n",
+        "tweet": "Hundreds of veterans sued military contractor KBR Inc., alleging toxic smoke from burn pits at military bases made them ill. A federal appellate court said compensation must come from Congress."
     },
     {
-        "username": "TechCrunch\n",
-        "tweet": "Here's your daily roundup on the top stories from the tech world"
-    },
-    {
-        "username": "BBCworld\n",
-        "tweet": "\"My son wants to sell art to pay our bills.\"\n\nHow are Americans coping with the government shutdown?\n\n[Tap to expand] https://bbc.in/2Fqz1Kh "
+        "username": "npr\n",
+        "tweet": "Ohio Democratic Sen. Sherrod Brown took a step towards a 2020 presidential campaign, announcing a tour of states holding early presidential primaries next year."
     },
     {
         "username": "nasa\n",
-        "tweet": "The @SpaceX #Dragon cargo craft will stay a few more days at the space station as the crew gets back to science and maintenance duties. https://go.nasa.gov/2FlqJDo "
+        "tweet": "The liquid hydrogen tank will comprise two-thirds of the #NASASLS core stage and hold 537,000 gallons of liquid hydrogen. A test article tank was loaded into a stand @NASA_Marshall where it will undergo rigorous testing. MORE: http://go.nasa.gov/2VWLtqV "
     },
     {
-        "username": "DalaiLama\n",
-        "tweet": "Modern education is premised strongly on materialistic values. It is vital that when educating our children\u2019s brains that we do not neglect to educate their hearts, a key element of which has to be the nurturing of our compassionate nature."
+        "username": "nasa\n",
+        "tweet": "Administrator @JimBridenstine & Russian Space Agency @ROSCOSMOS General Director Dmitry @Rogozin had a teleconference today where they discussed further cooperation in space, as well as the prospect of a meeting."
+    },
+    {
+        "username": "TechCrunch",
+        "tweet": "On-demand telehealth company Tyto Care adds Sanford Health, Itochu and Shenzhen Capital Group as strategic investors https://tcrn.ch/2QV8A1H  by @catherineshu"
+    },
+    {
+        "username": "TechCrunch",
+        "tweet": "YC-backed Upsolve is automating bankruptcy for everyone https://tcrn.ch/2DbVvx1 "
     }
 ]

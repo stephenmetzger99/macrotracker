@@ -1,7 +1,4 @@
 elonmusk
-espn
-NPR
-TechCrunch
-BBCworld
+npr
 nasa
-DalaiLama
+TechCrunch

@@ -6,6 +6,13 @@
 			#amsterdam-container, #rotterdam-container, #utrecht-container {
 				display: inline-block;
 			}
+            html{
+                background: url(images/background1.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
 			.widget-title{
 				display: none;
 			}
@@ -165,40 +172,25 @@
 	<body onload="twitterTicker()">
         <!-- Header w/ pictures and clock -->
 		<div class="header" style="border-bottom: 1px solid #f2f2f2; height:8%">
-			<img src="images/ortec.png" id="ortec-logo" style="position:relative;">
-			<img src="images/maxgrip.png" id="maxgrip-logo" style="float:right">
-			<h1 id="clock" onload=""="displayDate()" style="position: absolute; top:0; left:41%; top: 1%; font-family:'Roboto'; color:#545a67;"></h1>
+			<img src="images/spacex.png" id="ortec-logo" style="position:relative; top:0%; left: 0%; height: 80px">
+			<img src="images/ortec.png" id="maxgrip-logo" style="position: relative; top: 0%; float:right; right: 2%">
+            
+			<h1 id="clock" onload=""="displayDate()" style="position: absolute; top:0; left:41%; top: 1%; font-family:'Roboto'; color:#ffffff;"></h1>
 		</div>
+        
 		<br>
-        <!-- Widget Titles -->
-        <div class="widget-title-container">
-            <h3 style="font-family:'Roboto'; position:absolute; top:8%; width:24%; left:68%; color:#545a67;">Weather</h3>
-            <h3 style="font-family:'Roboto'; position:absolute; top:41%; width:24%; left:68%; color:#545a67;">Traffic</h3>
-            <!--
-        <h3 style="font-family:'Roboto'; position:absolute; top:41%; left:89%; color:#545a67;">Ortegrippies:</h3>
-        -->
-        </div>
+        
 
 
         <!-- Weather (Dark Sky API)-->
-		<div id="weather-container" style="width:50%; height:80%; overflow: hidden;  position:absolute; left: 50%; top:12%;">
-			<script type='text/javascript' src='https://darksky.net/widget/default/29.7604267,-95.3698028/us12/en.js?width=100%&height=304&title=Houston, TX&textColor=333333&bgColor=FFFFFF&transparency=false&skyColor=333333&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'></script>
+		<div id="weather-container" style="width:32%; height:80%; overflow: hidden;  position:absolute; left: 34%; top:8%;">
+			<script type='text/javascript' src='https://darksky.net/widget/default/29.7604267,-95.3698028/us12/en.js?width=100%&height=304&title=Houston, TX&textColor=333333&bgColor=FFFFFF&transparency=true&skyColor=333333&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C0C0C0&displaySum=yes&displayHeader=yes'></script>
 		</div>
 
-        <!-- Traffic (waze)-->
-		<div id="traffic-container" style="position: absolute; top:46%; left:60%; width:40%; height: 48%">
-            <iframe width="600" height="450" allowfullscreen src="https://embed.waze.com/iframe?zoom=12&lat=29.745898&lon=-95.453682&ct=livemap"></iframe>
+        <!-- Traffic (waze)
+		<div id="traffic-container" style="position: absolute; left:3%; width:40%; height: 48%; bottom:5%;">
+            <iframe width="500" height="320" allowfullscreen src="https://embed.waze.com/iframe?zoom=12&lat=29.745898&lon=-95.453682&ct=livemap"></iframe>
         </div>
-        
-        <!-- Fantasy Football Standings
-		<div class="standing-container">
-				<table class="standing" id="standing-table">
-					<tr>
-						<td>1.</td><td>Standings</td><td></td>
-					</tr>
-				</table>
-			</div>
-		</div>
         -->
 
 		<div class="marquee-container">
