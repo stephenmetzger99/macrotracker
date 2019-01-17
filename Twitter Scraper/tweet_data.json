@@ -1,34 +1,34 @@
 tweet_data =[
     {
         "username": "elonmusk\n",
-        "tweet": "Btw, you can buy a Tesla online in less than 2 mins & give it back for a full refund for any reason"
+        "tweet": "AI is better at bluffing than professional gamblers"
     },
     {
         "username": "elonmusk\n",
-        "tweet": "Glad you like it"
+        "tweet": "The Tesla customer referral program will end on Feb 1. If you want to refer a friend to buy a Tesla & give them 6 months of free Supercharging, please do so before then."
     },
     {
         "username": "npr\n",
-        "tweet": "Hundreds of veterans sued military contractor KBR Inc., alleging toxic smoke from burn pits at military bases made them ill. A federal appellate court said compensation must come from Congress."
+        "tweet": "How Strong Is The Islamic State In Syria?"
     },
     {
         "username": "npr\n",
-        "tweet": "Ohio Democratic Sen. Sherrod Brown took a step towards a 2020 presidential campaign, announcing a tour of states holding early presidential primaries next year."
+        "tweet": "President Trump appears to be retaliating against House Speaker Nancy Pelosi for postponing his State of the Union address by postponing at the last minute her trip to Afghanistan."
     },
     {
         "username": "nasa\n",
-        "tweet": "The liquid hydrogen tank will comprise two-thirds of the #NASASLS core stage and hold 537,000 gallons of liquid hydrogen. A test article tank was loaded into a stand @NASA_Marshall where it will undergo rigorous testing. MORE: http://go.nasa.gov/2VWLtqV "
+        "tweet": "By mapping impact craters on our Moon with @LRO_NASA data, scientists have made a surprising discovery about the history of asteroid impacts on Earth. https://go.nasa.gov/2Rx7eiC "
     },
     {
         "username": "nasa\n",
-        "tweet": "Administrator @JimBridenstine & Russian Space Agency @ROSCOSMOS General Director Dmitry @Rogozin had a teleconference today where they discussed further cooperation in space, as well as the prospect of a meeting."
+        "tweet": "How old are #Saturn\u2019s rings?\n\nData from @CassiniSaturn suggest they\u2019re younger than the planet, forming 10\u2013100 million years ago when dinosaurs lived on Earth: https://go.nasa.gov/2SZZPoN "
     },
     {
         "username": "TechCrunch",
-        "tweet": "On-demand telehealth company Tyto Care adds Sanford Health, Itochu and Shenzhen Capital Group as strategic investors https://tcrn.ch/2QV8A1H  by @catherineshu"
+        "tweet": "How Lyft envisions bringing VR and AR to your ride https://tcrn.ch/2FH4msr  by @meganrosedickey"
     },
     {
         "username": "TechCrunch",
-        "tweet": "YC-backed Upsolve is automating bankruptcy for everyone https://tcrn.ch/2DbVvx1 "
+        "tweet": "Coinbase is continuing its push to suck up talent in the Bay Area"
     }
 ]

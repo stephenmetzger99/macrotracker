@@ -1,5 +1,6 @@
 import sys
 import copy
+import twitterscraper2 as ts
 
 def listAllUsers():
     for user in userList:
@@ -14,10 +15,6 @@ def removeUser(userList):
         if (usrIn == user):
             print("hi")
             userList.remove(usrIn)
-
-            
-            
-        
     
     
 def addUser():
@@ -33,7 +30,7 @@ def addUser():
     user_file.close()
     
 def menu():
-    print("\nEdit list of twitter accounts: \n\t1. List Users\n\t2. Add User\n\t3. Remove user\n\t0. Exit")
+    print("\nEdit list of twitter accounts: \n\t1. List Users\n\t2. Add User\n\t3. Remove user\n\t4. Update feed\n\t0. Exit")
     usrIn = input("Choice: ")
     userInput = int(usrIn)
     
@@ -43,6 +40,8 @@ def menu():
         addUser()
     elif (userInput == 3):
         removeUser(userList)
+    elif (userInput == 4):
+        ts.feedUpdater()
     elif (userInput == 0):
         sys.exit()
     else:
