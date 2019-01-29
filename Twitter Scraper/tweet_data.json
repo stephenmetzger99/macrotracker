@@ -1,34 +1,34 @@
 tweet_data =[
     {
         "username": "elonmusk\n",
-        "tweet": "AI is better at bluffing than professional gamblers"
+        "tweet": "Testing metallic heat shield at 1100C (2000F) @SpaceX"
     },
     {
         "username": "elonmusk\n",
-        "tweet": "The Tesla customer referral program will end on Feb 1. If you want to refer a friend to buy a Tesla & give them 6 months of free Supercharging, please do so before then."
+        "tweet": "If test flight of  goes well next month, @NASA   will  to @Space_Station this summer!"
     },
     {
         "username": "npr\n",
-        "tweet": "How Strong Is The Islamic State In Syria?"
+        "tweet": "NPR's Planet Money tries to understand how a fund once called the  \"pursuit of mediocrity\" and \u201ca solid, consistent long-term loser\u201d outperformed a bunch of hedge funds put together by some of the smartest money managers."
     },
     {
         "username": "npr\n",
-        "tweet": "President Trump appears to be retaliating against House Speaker Nancy Pelosi for postponing his State of the Union address by postponing at the last minute her trip to Afghanistan."
+        "tweet": "NPR Music's sprint through this week's essential new albums includes music from the Compton rapper Boogie, the good-times riff-rock of FIDLAR, a return to form from The Dandy Warhols and more."
     },
     {
         "username": "nasa\n",
-        "tweet": "By mapping impact craters on our Moon with @LRO_NASA data, scientists have made a surprising discovery about the history of asteroid impacts on Earth. https://go.nasa.gov/2Rx7eiC "
+        "tweet": "NEW: #UltimaThule, now in higher-res!  Both lobes now show many intriguing light & dark patterns of unknown origin, which may reveal clues about how it was assembled during the formation of the #solarsystem! @NASANewHorizons http://bit.ly/MU69-higher-res "
     },
     {
         "username": "nasa\n",
-        "tweet": "How old are #Saturn\u2019s rings?\n\nData from @CassiniSaturn suggest they\u2019re younger than the planet, forming 10\u2013100 million years ago when dinosaurs lived on Earth: https://go.nasa.gov/2SZZPoN "
+        "tweet": "Congratulations to @blueorigin on a successful flight today of the #NewShepard crew capsule! We are thrilled to work with our commercial partners to develop innovative space technologies through @NASA's Flight Opportunities program. https://go.nasa.gov/2SVCmV5 "
     },
     {
         "username": "TechCrunch",
-        "tweet": "How Lyft envisions bringing VR and AR to your ride https://tcrn.ch/2FH4msr  by @meganrosedickey"
+        "tweet": "Meet the little-known Chinese WiFi startup that rubs shoulders with WeChat and Alipay https://tcrn.ch/2HxIXEr  by @ritacyliao"
     },
     {
         "username": "TechCrunch",
-        "tweet": "Coinbase is continuing its push to suck up talent in the Bay Area"
+        "tweet": "Scooters 2.0, Munchery ghosts, and solving contraceptive deserts https://tcrn.ch/2Wj1Mi8  by @alex"
     }
 ]
