@@ -9,11 +9,11 @@ tweet_data =[
     },
     {
         "username": "npr\n",
-        "tweet": "At $22 trillion, the U.S. government's public debt is now the highest it's ever been \u2013\u2013 having risen more than $2 trillion from the day President Trump took office in 2017."
+        "tweet": "Since the shooting, young Parkland survivors have emerged as the driving force in calling for stricter gun laws in the U.S. through a series of marches, school walkouts and voter registration drives."
     },
     {
         "username": "npr\n",
-        "tweet": "JUST IN: A former U.S. Air Force counterintelligence officer has been indicted for allegedly giving national defense secrets to Iran, reports NPR's @relucasz. Monica Witt defected to Iran in 2013, authorities said."
+        "tweet": "At $22 trillion, the U.S. government's public debt is now the highest it's ever been \u2013\u2013 having risen more than $2 trillion from the day President Trump took office in 2017."
     },
     {
         "username": "nasa\n",
@@ -29,6 +29,6 @@ tweet_data =[
     },
     {
         "username": "TechCrunch",
-        "tweet": "Breaking: Justice Dept. has charged former Air Force officer Monica Witt who had the highest levels of security clearance, with spying on behalf of Iran."
+        "tweet": "Take a breath, it wasn't just you..."
     }
 ]
