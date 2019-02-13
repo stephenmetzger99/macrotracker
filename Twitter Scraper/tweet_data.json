@@ -1,34 +1,34 @@
 tweet_data =[
     {
         "username": "elonmusk\n",
-        "tweet": "Testing metallic heat shield at 1100C (2000F) @SpaceX"
+        "tweet": "Bet the other carmakers didn\u2019t see that one coming haha"
     },
     {
         "username": "elonmusk\n",
-        "tweet": "If test flight of  goes well next month, @NASA   will  to @Space_Station this summer!"
+        "tweet": "To air is human"
     },
     {
         "username": "npr\n",
-        "tweet": "NPR's Planet Money tries to understand how a fund once called the  \"pursuit of mediocrity\" and \u201ca solid, consistent long-term loser\u201d outperformed a bunch of hedge funds put together by some of the smartest money managers."
+        "tweet": "At $22 trillion, the U.S. government's public debt is now the highest it's ever been \u2013\u2013 having risen more than $2 trillion from the day President Trump took office in 2017."
     },
     {
         "username": "npr\n",
-        "tweet": "NPR Music's sprint through this week's essential new albums includes music from the Compton rapper Boogie, the good-times riff-rock of FIDLAR, a return to form from The Dandy Warhols and more."
+        "tweet": "JUST IN: A former U.S. Air Force counterintelligence officer has been indicted for allegedly giving national defense secrets to Iran, reports NPR's @relucasz. Monica Witt defected to Iran in 2013, authorities said."
     },
     {
         "username": "nasa\n",
-        "tweet": "NEW: #UltimaThule, now in higher-res!  Both lobes now show many intriguing light & dark patterns of unknown origin, which may reveal clues about how it was assembled during the formation of the #solarsystem! @NASANewHorizons http://bit.ly/MU69-higher-res "
+        "tweet": "#ICYMI: Scientists may have found a 22-mile-wide crater buried under more than a mile of ice in Greenland. Learn how we\u2019ll use data to determine if the crater is the result of a meteorite impact:"
     },
     {
         "username": "nasa\n",
-        "tweet": "Congratulations to @blueorigin on a successful flight today of the #NewShepard crew capsule! We are thrilled to work with our commercial partners to develop innovative space technologies through @NASA's Flight Opportunities program. https://go.nasa.gov/2SVCmV5 "
+        "tweet": "Investigating the Universe is best done in many wavelengths of light! Check out these radio telescope #space images in honor of #WorldRadioDay! Hercules A (blue), Tycho's Supernova Remnant (pink), and the Crab Nebula (red)."
     },
     {
         "username": "TechCrunch",
-        "tweet": "Meet the little-known Chinese WiFi startup that rubs shoulders with WeChat and Alipay https://tcrn.ch/2HxIXEr  by @ritacyliao"
+        "tweet": "TechCrunch invites you to dig deeper and build better with our new membership program, Extra Crunch. Start your free trial at http://techcrunch.com/subscribe "
     },
     {
         "username": "TechCrunch",
-        "tweet": "Scooters 2.0, Munchery ghosts, and solving contraceptive deserts https://tcrn.ch/2Wj1Mi8  by @alex"
+        "tweet": "Breaking: Justice Dept. has charged former Air Force officer Monica Witt who had the highest levels of security clearance, with spying on behalf of Iran."
     }
 ]

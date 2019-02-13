@@ -1,0 +1,280 @@
+<html>
+	<head>
+		<meta http-equiv="refresh" content="300" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style>
+			#amsterdam-container, #rotterdam-container, #utrecht-container {
+				display: inline-block;
+			}
+            html{
+                background: url(images/background1.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+			.widget-title{
+				display: none;
+			}
+			.marquee-container{
+				overflow: hidden;
+				white-space: nowrap;
+				position:absolute;
+				top: 95%;
+				bottom: 0%;
+				left: 0%;
+				height: 5%;
+				width: 100%;
+				font-family: 'Roboto';
+				color: white;
+				background-color: #545a67;
+			}
+
+			.marq {
+				display: inline-block;
+				animation: marquee 120s linear infinite;
+				width: 100%;
+				height: 100%;
+              
+               
+			}
+			
+			.score {
+				font-family: 'Roboto';
+				display: inline-block;
+				margin-left: 50px;
+				vertical-align: middle;
+			}
+			.score-team {
+				font-family: 'Roboto';
+				color: white;
+				background-color: #545a67;
+				padding-right: 10px;
+				font-weight: bold;
+                
+			}
+			.score-score {
+				font-family: 'Roboto';
+				color: white;
+				background-color: black;
+				padding-left: 20px;
+				font-weight: bold;
+			}
+			.score-score.winner {
+				font-family: 'Roboto';
+				color: #fff999;
+				background-color: black;
+				padding-left: 20px;
+				font-weight: bold;
+			}
+
+			.standing-container {
+				position: absolute;
+				top:46%;
+				left:88%;
+				width:11%;
+				height: 48%;
+			}
+			.standing {
+				font-family: 'Roboto';
+				font-size: 14px;
+				vertical-align: middle;
+			}
+
+			@keyframes marquee {
+				from {
+					transform: translateX(100%);
+				}
+				to {
+					transform: translateX(-600%);
+				}
+			}
+		</style>
+
+		<script type="text/javascript">
+			setInterval(displayClock, 1000)
+			function displayClock(){
+				var time = new Date();
+				var months = new Array();
+				months[0] = "January";
+				months[1] = "February";
+				months[2] = "March";
+				months[3] = "April";
+				months[4] = "May";
+				months[5] = "June";
+				months[6] = "July";
+				months[7] = "August";
+				months[8] = "September";
+				months[9] = "October";
+				months[10] = "November";
+				months[11] = "December";
+				var month = months[time.getMonth()];
+				var day = time.getDate();
+				var hrs = time.getHours();
+				var min = time.getMinutes();
+				var sec = time.getSeconds();
+				var en = 'AM';
+
+				if (sec == 13) {
+					document.getElementById("maxgrip-logo").src="images/maxgirp.png";
+				} else {
+					document.getElementById("maxgrip-logo").src="images/maxgrip.png";
+				}
+
+				if(hrs == 17 && min == 0) {
+					document.getElementById("clock").innerHTML = "Beer O'Clock";
+				}
+				else
+				{
+					if(hrs > 12){
+						en = 'PM';
+						hrs = hrs - 12;
+					}
+
+					if(min < 10){
+						min = '0' + min;
+					}
+
+					if(sec < 10){
+						sec = '0' + sec;
+					}
+
+					document.getElementById("clock").innerHTML = month + ' ' + day + ',   ' + hrs + ':' + min + ':' + sec + ' ' + en;
+				}
+			}
+		</script>
+
+		
+        <script type ="text/javascript" src ="tweet_data.json"></script>
+
+        <script type="text/javascript">
+			function twitterTicker() {
+			    var result = "<div class=\"score\"><h3 style=\"padding-top: 15px; margin: 0px; color: #1DA1F2;\">Twitter:<h3></div>";
+                
+			    for (var i = 0; i < tweet_data.length; i++) {
+			        result += "<div class=\"score\">"
+                        + "@" + tweet_data[i].username + " on Twitter: " + tweet_data[i].tweet
+						+ "</td><td class=\"score-score";
+			       
+			        result += "\">"
+						+"</table></div>";
+			    }
+
+				document.getElementById("score-marquee").innerHTML = result;
+
+
+				result = "";
+				
+			}
+        </script>
+	</head>
+    
+	<body onload="twitterTicker()">
+        <!-- Header w/ pictures and clock -->
+		<div class="header" style="border-bottom: 1px solid #f2f2f2; height:8%">
+            <img src="images/ortec.png" id="ortec-logo" style="position: relative; float:left; top: 0%; left: 2%">
+			<img src="images/spacex.png" id="spacex-logo" style="position:relative; top:0%;float:right; left: 0%; height: 80px">
+            
+			<h1 id="clock" onload=""="displayDate()" style="position: absolute; top:0; left:41%; top: 1%; font-family:'Roboto'; color:#ffffff;"></h1>
+		</div>
+        
+		<br>
+        <button onclick="window.location.href = 'dashboard.html';">Return to Dashboard</button>
+        <div style="bottom: 10%;">
+            <table>
+                <tr>
+                    <td>
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container" style="margin: 10%;">
+                            <div id="tradingview_97881"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AMD/" rel="noopener" target="_blank"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                            <script type="text/javascript">
+                                new TradingView.widget(
+                                {
+                                    "width": 600,
+                                    "height": 400,
+                                    "symbol": "NASDAQ:AMD",
+                                    "interval": "D",
+                                    "timezone": "Etc/UTC",
+                                    "theme": "Light",
+                                    "style": "1",
+                                    "locale": "en",
+                                    "toolbar_bg": "#f1f3f6",
+                                    "enable_publishing": false,
+                                    "allow_symbol_change": true,
+                                    "container_id": "tradingview_97881"
+                                }
+                              );
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </td>
+                    <td>
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container" style="margin: 10%;">
+                            <div id="tradingview_1b51b"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-MU/" rel="noopener" target="_blank"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                            <script type="text/javascript">
+                                new TradingView.widget(
+                                {
+                                    "width": 600,
+                                    "height": 400,
+                                    "symbol": "NASDAQ:MU",
+                                    "interval": "D",
+                                    "timezone": "Etc/UTC",
+                                    "theme": "Light",
+                                    "style": "1",
+                                    "locale": "en",
+                                    "toolbar_bg": "#f1f3f6",
+                                    "enable_publishing": false,
+                                    "allow_symbol_change": true,
+                                    "container_id": "tradingview_1b51b"
+                                }
+                                );
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </td>
+                    <td>
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container" style="margin: 10%;">
+                            <div id="tradingview_2bc2b"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AMEX-VOO/" rel="noopener" target="_blank"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                            <script type="text/javascript">
+                                new TradingView.widget(
+                                {
+                                    "width": 600,
+                                    "height": 400,
+                                    "symbol": "AMEX:VOO",
+                                    "interval": "D",
+                                    "timezone": "Etc/UTC",
+                                    "theme": "Light",
+                                    "style": "1",
+                                    "locale": "en",
+                                    "toolbar_bg": "#f1f3f6",
+                                    "enable_publishing": false,
+                                    "allow_symbol_change": true,
+                                    "container_id": "tradingview_2bc2b"
+                                }
+                                );
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+       
+
+   
+
+     
+
+		<div class="marquee-container">
+			<div class="marq" id="score-marquee"></div>
+		</div>
+	</body>
+</html>
