@@ -1,27 +1,27 @@
 tweet_data =[
     {
         "username": "elonmusk\n",
-        "tweet": "Bet the other carmakers didn\u2019t see that one coming haha"
+        "tweet": ""
     },
     {
         "username": "elonmusk\n",
-        "tweet": "To air is human"
+        "tweet": "Of course I still love you"
     },
     {
         "username": "npr\n",
-        "tweet": "Since the shooting, young Parkland survivors have emerged as the driving force in calling for stricter gun laws in the U.S. through a series of marches, school walkouts and voter registration drives."
+        "tweet": "'Do Not Travel To Haiti,' U.S. Tells Citizens, Citing Violent Unrest"
     },
     {
         "username": "npr\n",
-        "tweet": "At $22 trillion, the U.S. government's public debt is now the highest it's ever been \u2013\u2013 having risen more than $2 trillion from the day President Trump took office in 2017."
+        "tweet": "Trumpeter Terence Blanchard has career spanning three decades in both jazz and film scoring. We dive into his work with Spike Lee, his E-Collective band and a new commission."
     },
     {
         "username": "nasa\n",
-        "tweet": "#ICYMI: Scientists may have found a 22-mile-wide crater buried under more than a mile of ice in Greenland. Learn how we\u2019ll use data to determine if the crater is the result of a meteorite impact:"
+        "tweet": "Mars is red.\nNeptune is blue.\nFrom across the universe, \nWe shared #ValentinesDay with you.\n\nTake a look back at some of the out-of-this-world puns, cards and more:"
     },
     {
         "username": "nasa\n",
-        "tweet": "Investigating the Universe is best done in many wavelengths of light! Check out these radio telescope #space images in honor of #WorldRadioDay! Hercules A (blue), Tycho's Supernova Remnant (pink), and the Crab Nebula (red)."
+        "tweet": "Thanks for all the Valentine\u2019s Day wishes...we love to share this space with you! #ValentineToSpace #ValentineFromSpace"
     },
     {
         "username": "TechCrunch",
@@ -29,6 +29,6 @@ tweet_data =[
     },
     {
         "username": "TechCrunch",
-        "tweet": "Take a breath, it wasn't just you..."
+        "tweet": "Urban unicorn renewal https://tcrn.ch/2UWkR8g "
     }
 ]

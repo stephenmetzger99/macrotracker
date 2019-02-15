@@ -3,6 +3,8 @@ import json
 
 from selenium import webdriver
 
+
+# purpose: Using a txt file of twitter users, print 2 tweets per user to console.
 with open("twitterusers.txt") as file:
     for line in file:
         query = line
